@@ -3,6 +3,10 @@ import ReactSwitch from "react-switch";
 import { createContext, useState, useEffect } from "react";
 import Home from "./components/Home";
 import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 function App() {
   const [darkMode, setDarkMode] = useState("light");
 
@@ -24,6 +28,10 @@ function App() {
       </button>
       <Home />
       <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
   );
 }
