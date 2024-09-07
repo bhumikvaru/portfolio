@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import CV from "../assets/CV.pdf"; // Adjust the path as needed
 import { useState } from "react";
-import Logo from "../assets/logos/logo-script.png";
+import Logo from "../assets/logos/fullname.png";
 
 const saveFile = () => {
   fetch(CV).then((response) => {
@@ -27,9 +27,7 @@ const Navbar = () => {
       className="fixed w-full h-[90px] flex justify-between items-center px-4 bg-[#181818] z-50 text-white"
       id="Navbar"
     >
-      <div>
-        <img src={Logo} alt="Logo" className="w-[75px]" />
-      </div>
+      <div>{/* <img src={Logo} alt="Logo" className="w-[75px]" /> */}</div>
 
       {/* menu */}
       <div className="hidden md:flex">
